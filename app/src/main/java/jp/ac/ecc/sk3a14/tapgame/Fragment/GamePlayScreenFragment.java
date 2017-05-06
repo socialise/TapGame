@@ -109,6 +109,7 @@ public class GamePlayScreenFragment extends Fragment {
 
                 //画面遷移
                 Intent intent = new Intent();
+	            intent.putExtra("score", count);
                 intent.setClass(getContext(), ResultActivity.class);
                 startActivity(intent);
 
